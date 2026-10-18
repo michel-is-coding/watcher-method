@@ -65,10 +65,10 @@ brew install jq
 En plugin, les cinq skills s'installent d'un coup, et les mises à jour suivent :
 
 ```sh
-/plugin marketplace add 94-hermes/session-skills   # Claude Code, dans une session
-/plugin install matthieu@session-skills
-codex plugin marketplace add 94-hermes/session-skills   # Codex, dans le terminal
-codex plugin add matthieu@session-skills
+/plugin marketplace add 94-hermes/watcher-method   # Claude Code, dans une session
+/plugin install matthieu@watcher-method
+codex plugin marketplace add 94-hermes/watcher-method   # Codex, dans le terminal
+codex plugin add matthieu@watcher-method
 ```
 
 Sous Claude Code, un skill installé ainsi s'appelle `/matthieu:<nom>` (par exemple `/matthieu:watcher`).
@@ -78,17 +78,17 @@ Sous Claude Code, un skill installé ainsi s'appelle `/matthieu:<nom>` (par exem
 Par lien symbolique, pour suivre les mises à jour avec un simple `git pull` :
 
 ```sh
-git clone https://github.com/94-hermes/session-skills.git ~/session-skills
+git clone https://github.com/94-hermes/watcher-method.git ~/watcher-method
 mkdir -p ~/.claude/skills ~/.codex/skills
-ln -s ~/session-skills/skills/watcher ~/.claude/skills/watcher   # Claude Code
-ln -s ~/session-skills/skills/watcher ~/.codex/skills/watcher    # Codex
+ln -s ~/watcher-method/skills/watcher ~/.claude/skills/watcher   # Claude Code
+ln -s ~/watcher-method/skills/watcher ~/.codex/skills/watcher    # Codex
 ```
 
 Par copie, pour une version figée que tu peux modifier :
 
 ```sh
-cp -R ~/session-skills/skills/watcher ~/.claude/skills/
-cp -R ~/session-skills/skills/watcher ~/.codex/skills/
+cp -R ~/watcher-method/skills/watcher ~/.claude/skills/
+cp -R ~/watcher-method/skills/watcher ~/.codex/skills/
 ```
 
 Remplace `watcher` par le skill voulu. Les quatre skills de travail (`sessions`, `watcher`, `handoff`, `regles`) s'installent ensemble : voir [Commencer](#commencer). Ouvre ensuite une nouvelle session : le skill s'appelle par `/nom` sous Claude Code, par `$nom` sous Codex, ou se déclenche seul quand la demande correspond à sa description.

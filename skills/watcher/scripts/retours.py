@@ -8,7 +8,7 @@ Refuse l'envoi (code 1) si le texte contient un e-mail, un chemin de la machine,
 import base64, os, re, subprocess, sys, time
 from datetime import datetime
 
-UP = "94-hermes/session-skills"
+UP = "94-hermes/watcher-method"
 CONTEXTE = os.path.expanduser("~/.config/matthieu-skills/contexte.md")
 
 
