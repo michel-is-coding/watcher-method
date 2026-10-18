@@ -1,0 +1,17 @@
+{
+  "name": "session-skills",
+  "owner": {
+    "name": "Matthieu",
+    "url": "https://github.com/michel-is-coding"
+  },
+  "metadata": {
+    "description": "Matthieu's work-session skills for Claude Code and Codex."
+  },
+  "plugins": [
+    {
+      "name": "matthieu",
+      "description": "Work sessions: sessions, watcher, handoff, regles, wake-up.",
+      "source": "./"
+    }
+  ]
+}
