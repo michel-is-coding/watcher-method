@@ -65,9 +65,9 @@ brew install jq
 En plugin, les cinq skills s'installent d'un coup, et les mises à jour suivent :
 
 ```sh
-/plugin marketplace add 94-hermes/watcher-method   # Claude Code, dans une session
+/plugin marketplace add michel-is-coding/watcher-method   # Claude Code, dans une session
 /plugin install matthieu@watcher-method
-codex plugin marketplace add 94-hermes/watcher-method   # Codex, dans le terminal
+codex plugin marketplace add michel-is-coding/watcher-method   # Codex, dans le terminal
 codex plugin add matthieu@watcher-method
 ```
 
@@ -78,7 +78,7 @@ Sous Claude Code, un skill installé ainsi s'appelle `/matthieu:<nom>` (par exem
 Par lien symbolique, pour suivre les mises à jour avec un simple `git pull` :
 
 ```sh
-git clone https://github.com/94-hermes/watcher-method.git ~/watcher-method
+git clone https://github.com/michel-is-coding/watcher-method.git ~/watcher-method
 mkdir -p ~/.claude/skills ~/.codex/skills
 ln -s ~/watcher-method/skills/watcher ~/.claude/skills/watcher   # Claude Code
 ln -s ~/watcher-method/skills/watcher ~/.codex/skills/watcher    # Codex

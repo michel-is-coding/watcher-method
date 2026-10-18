@@ -8,7 +8,7 @@ Refuse l'envoi (code 1) si le texte contient un e-mail, un chemin de la machine,
 import base64, os, re, subprocess, sys, time
 from datetime import datetime
 
-UP = "94-hermes/watcher-method"
+UP = "michel-is-coding/watcher-method"
 CONTEXTE = os.path.expanduser("~/.config/matthieu-skills/contexte.md")
 
 
@@ -27,7 +27,7 @@ def fuites(texte, contexte=""):
     trouve = re.findall(r"[\w.+-]+@[\w-]+\.[\w.]+", texte)
     trouve += re.findall(r"(?:/Users/|/home/|[A-Z]:\\)\S*", texte)
     trouve += [p for p in re.findall(r"~/\S+", texte) if not p.startswith(("~/.config/matthieu-skills", "~/.claude"))]
-    trouve += [u for u in re.findall(r"https?://\S+", texte) if not u.startswith("https://github.com/94-hermes/")]
+    trouve += [u for u in re.findall(r"https?://\S+", texte) if not u.startswith(("https://github.com/94-hermes/", "https://github.com/michel-is-coding/watcher-method"))]
     trouve += [n for n in noms_propres(contexte) if re.search(rf"\b{re.escape(n)}\b", texte, re.I)]
     return sorted({t.rstrip(".,;:)") for t in trouve})
 

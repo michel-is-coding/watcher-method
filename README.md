@@ -6,9 +6,9 @@ Cinq skills pour travailler à plusieurs sessions d'agents dans Claude Code et C
 ## Installer
 
 ```sh
-/plugin marketplace add 94-hermes/watcher-method   # Claude Code, dans une session
+/plugin marketplace add michel-is-coding/watcher-method   # Claude Code, dans une session
 /plugin install matthieu@watcher-method
-codex plugin marketplace add 94-hermes/watcher-method   # Codex, dans le terminal
+codex plugin marketplace add michel-is-coding/watcher-method   # Codex, dans le terminal
 codex plugin add matthieu@watcher-method
 ```
 

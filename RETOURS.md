@@ -9,9 +9,9 @@ Un retour ne porte que sur la méthode, jamais sur ton contexte (voir [méthode,
 Le watcher te le propose une fois et prépare le texte. Tu le relis. Sur ton mot, `skills/watcher/scripts/retours.py <fichier>` :
 
 1. refuse le texte s'il garde un e-mail, un chemin de ta machine, un lien hors de 94-hermes ou un nom propre de ton `contexte.md` ;
-2. crée ton fork de [94-hermes/watcher-method](https://github.com/94-hermes/watcher-method) s'il n'existe pas : les retours passent par lui ;
+2. crée ton fork de [michel-is-coding/watcher-method](https://github.com/michel-is-coding/watcher-method) s'il n'existe pas : les retours passent par lui ;
 3. y dépose le retour, dans `retours/` ;
-4. ouvre une issue chez 94-hermes/watcher-method, avec le texte et le lien vers ton fork.
+4. ouvre une issue chez michel-is-coding/watcher-method, avec le texte et le lien vers ton fork.
 
 Sans watcher, écris le fichier toi-même au format ci-dessous, puis lance le script. `--dry-run` vérifie l'anonymisation sans rien envoyer.
 
